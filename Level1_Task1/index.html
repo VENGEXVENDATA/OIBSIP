@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="coffee.png" alt="coffee" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation"></ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">New Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Start Of your Day <br>Start it with Something Good!! <br> <span>StarHub</span></h2>
+                <p>A frappé can be made with a cocktail shaker or, more commonly today, with an electric milk frother or
+                    milkshake machine. First, instant coffee , sugar (optionally), and a little water are shaken or
+                    blended together until a thick foam is made. This is poured into the serving glass and ice cubes,
+                    cold water, and, optionally, milk (traditionally evaporated milk) are added to it. The drink is
+                    almost always served with a drinking straw, as the thick foam which forms on top is considered
+                    unpleasantly bitter by many.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="coffee4.png" alt="coffee drink" class="starhub">
+            </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="coffee4.png" alt="coffee4" onclick="imgslider('coffee4.png'); changecirclecolor('#974928')">
+            </li>
+            <li><img src="coffee10.png" alt="coffee10"
+                    onclick="imgslider('coffee10.png'); changecirclecolor('#eb7495')"></li>
+            <li><img src="coffee11.png" alt="coffee11"
+                    onclick="imgslider('coffee11.png'); changecirclecolor('#A68FB6')"></li>
+        </ul>0
+        <ul class="social">
+            <li><a href="#"><img src="facebook.png" alt="social1"></a></li>
+            <li><a href="#"><img src="instagram.png" alt="social2"></a></li>
+            <li><a href="#"><img src="twitter.png" alt="social3"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.starhub').src = anything;
+        }
+        function changecirclecolor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function toggleMenu(){
+            var menutoggle=document.querySelector('.toggle');
+            var menutoggle=document.querySelector('.navigation');
+            menutoggle.classList.toggle('active')
+            navgation.classList.toggle('active')
+        }
+
+    </script>
+</body>
+
+</html>
